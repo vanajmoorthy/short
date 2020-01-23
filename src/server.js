@@ -32,7 +32,7 @@ const shortenURL = (db, url) => {
 		{
 			$setOnInsert: {
 				original_url: url,
-				short_id: nanoid(7)
+				short_id: nanoid(5)
 			}
 		},
 		{
