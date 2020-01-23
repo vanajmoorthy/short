@@ -1,5 +1,6 @@
 const form = document.querySelector(".url-form");
 const result = document.querySelector(".result-section");
+var withoutPrefix = location.origin.replace(/^http(s?):\/\//i, "");
 
 form.addEventListener("submit", event => {
 	event.preventDefault();
@@ -31,7 +32,7 @@ form.addEventListener("submit", event => {
 				`
         <div class="result">
           <a target="_blank" class="short-url" rel="noopener" href="/${data.short_id}">
-            ${location.origin}/${data.short_id}
+            ${withoutPrefix}/${data.short_id}
           </a>
         </div>
       `
