@@ -17,8 +17,8 @@ html {
 :root {
 	--blue: #1da7ea;
 	--bhover: #1583b9;
-	--orange: #ebae2b;
-	--ohover: #d19b26;
+	--orange: #EE6352;
+	--ohover: rgb(209, 88, 72);
 }
 
 /* Body
